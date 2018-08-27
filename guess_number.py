@@ -1,5 +1,10 @@
 import random
-num = random.randint(1, 100)
+# key in number range
+range_min = int(input('輸入範圍最小值: '))
+range_max = int(input('輸入範圍最大值: '))
+if range_min >= range_max:
+	print('最大值必須大於最小值') #number check
+num = random.randint(range_min, range_max)
 guess_time = 0
 while True:
 	guess_num = int(input('請猜數字: '))
